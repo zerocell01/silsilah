@@ -16,6 +16,23 @@ use Storage;
 class UsersController extends Controller
 {
     /**
+     * Display beranda with list of kepala keluarga.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function index()
+    {
+        $kepalaKeluarga = User::where('gender_id', 1)
+            ->whereHas('childs')
+            ->whereHas('wifes')
+            ->with('wifes', 'childs')
+            ->orderBy('name')
+            ->get();
+
+        return view('users.index', compact('kepalaKeluarga'));
+    }
+
+    /**
      * Search user by keyword.
      *
      * @return \Illuminate\View\View

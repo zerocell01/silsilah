@@ -42,4 +42,8 @@ return [
 
     'open_in_google_map' => 'Open in Google Map',
     'data_not_available' => 'Data not available.',
+
+    'kepala_keluarga' => 'Family Heads',
+    'total_kepala_keluarga' => 'Total: :total Family Heads',
+    'wife' => 'Wife',
 ];

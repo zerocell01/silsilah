@@ -42,4 +42,8 @@ return [
 
     'open_in_google_map' => 'Buka di Google Map',
     'data_not_available' => 'Data tidak tersedia.',
+
+    'kepala_keluarga' => 'Kepala Keluarga',
+    'total_kepala_keluarga' => 'Total: :total Kepala Keluarga',
+    'wife' => 'Istri',
 ];
